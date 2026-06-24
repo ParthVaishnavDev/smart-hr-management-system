@@ -1,0 +1,20 @@
+@EndUserText.label : 'Employee Master'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table zphr_employee {
+
+  key client      : abap.clnt not null;
+  key employee_id : abap.char(6) not null;
+  first_name      : abap.char(40);
+  last_name       : abap.char(40);
+  email           : abap.char(100);
+  mobile          : abap.char(15);
+  department_id   : abap.char(4);
+  designation_id  : abap.char(4);
+  salary          : abap.dec(15,2);
+  join_date       : abap.dats;
+  status          : abap.char(1);
+
+}
