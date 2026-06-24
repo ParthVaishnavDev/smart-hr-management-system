@@ -1,0 +1,12 @@
+@EndUserText.label : 'Department Master'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table zphr_department {
+
+  key client        : abap.clnt not null;
+  key department_id : abap.char(4) not null;
+  department_name   : abap.char(40);
+
+}
